@@ -1,0 +1,169 @@
+Style for the entire page
+body {
+  background-color: #f4f4f4;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #222;
+}
+
+/* Style for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Style for the title */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+/* Style for the form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form input,
+.form select {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+
+
+.form button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Style for the subtitle */
+.subtitle {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Style for the friend card */
+.friend-card {
+  margin-bottom: 20px;
+}
+
+.friend-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Style for the delete button */
+.btn-danger {
+  background-color: #f44336;
+  border-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+/* Style for the add friend button */
+.btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+  border-color: #0d47a1;
+}
+
+/* Style for the select element */
+select.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='%23646E7A'%3E%3Cpath d='M6.3 12.3l9.9 9.9c.4.4 1 .4 1.4 0l9.9-9.9c.4-.4.4-1 0-1.4l-1.4-1.4c-.4-.4-1-.4-1.4 0L17 18.8l-8.3-8.3c-.4-.4-1-.4-1.4 0l-1.4 1.4c-.5.3-.5 1 0 1.3z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  padding-right: 2rem;
+}
+
+/* Style for the chart */
+#chart {
+  margin: 2rem auto;
+  display: block;
+}
+
+/* Style for the download button */
+.btn-success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  margin-top: 1rem;
+}
+
+.btn-success:hover {
+  background-color: #388e3c;
+  border-color: #388e3c;
+}
+
+@media (max-width: 767px) {
+  .form input,
+  .form select {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .form input,
+  .form select {
+    font-size: 14px;
+  }
+}
+
+.fl {
+    justify-content: center;
+}
+
+.card-body{
+    justify-content: center;
+    text-align: center;
+}
+
+
+.my-table {
+  border: 2px solid #ccc;
+  align-items: center;
+  text-align: center;
+}
+
+.my-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.details {
+  font-size: 2rem;
+  text-align: center;
+  text-align: center;
+}
