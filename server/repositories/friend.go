@@ -67,7 +67,7 @@ func (r *friendRepository) GetFriendStats() (models.FriendStats, error) {
     Select("COUNT(*) as TotalFriendCount, "+
         "SUM(CASE WHEN gender = 'male' THEN 1 ELSE 0 END) as MaleCount, "+
         "SUM(CASE WHEN gender = 'female' THEN 1 ELSE 0 END) as FemaleCount, "+
-        "SUM(CASE WHEN age < 19 THEN 1 ELSE 0 END) as Under19Count, "+
+        "SUM(CASE WHEN age <= 19 THEN 1 ELSE 0 END) as Under19Count, "+
         "SUM(CASE WHEN age >= 20 THEN 1 ELSE 0 END) as Above20Count").
     Scan(&stats).Error
 	return stats, err
