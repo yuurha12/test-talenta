@@ -167,3 +167,9 @@ select.form-select {
   text-align: center;
   text-align: center;
 }
+
+.navbar {
+  margin: auto;
+  width: 100%;
+  position: fixed !important;
+}
